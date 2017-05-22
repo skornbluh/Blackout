@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.Scanner;
 
 public class Blackout {
 
@@ -42,8 +43,10 @@ public class Blackout {
 
 	}
 
+
 	public static void main(String[] args) {
-		String equation = args[0];
+		Scanner scan = new Scanner(System.in);
+		String equation = scan.nextLine();
 
 		blackoutNumbers(equation);
 
